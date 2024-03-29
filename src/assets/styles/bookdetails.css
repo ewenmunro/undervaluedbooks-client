@@ -1,0 +1,185 @@
+.book-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.book-details h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.book-details p {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: none;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.custom-alert.show {
+  animation: fadeInOut 3s forwards;
+}
+
+.book-details-trailer-button,
+.book-details-read-button,
+.book-details-copy-button,
+.book-details-email-button {
+  background-color: rgb(8, 176, 35);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1.5%;
+}
+
+.book-details-fb-button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1.5%;
+}
+
+.book-details-fb-button:hover {
+  background-color: #8b9dc3;
+}
+
+.book-details-twitter-button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1.5%;
+}
+
+.book-details-twitter-button:hover {
+  background-color: white;
+  color: #000000;
+}
+
+.book-details-share-buttons {
+  margin-bottom: 5%;
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.book-details-disable:disabled {
+  background-color: #f8f8f8;
+  color: #666;
+  border: 1px solid #ddd;
+  cursor: not-allowed;
+  pointer-events: none;
+  margin-bottom: 1.5%;
+}
+
+.trailer-button:hover,
+.read-button:hover,
+.copy-button:hover,
+.email-button:hover {
+  color: rgb(70, 248, 62);
+}
+
+/* Style for a disabled button */
+.read-button:disabled {
+  background-color: grey;
+  color: white;
+  cursor: not-allowed;
+}
+
+.book-details-error-message {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .book-details h1 {
+    font-size: 2.5rem;
+  }
+
+  .book-details p {
+    font-size: 1rem;
+  }
+
+  .book-details-trailer-button,
+  .book-details-read-button,
+  .book-details-share-button {
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+
+  .book-details-share-button {
+    margin-bottom: 15%;
+  }
+
+  .book-details-disable {
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .book-details h1 {
+    font-size: 2rem;
+  }
+
+  .book-details p {
+    font-size: 1rem;
+  }
+
+  .book-details-trailer-button,
+  .book-details-read-button,
+  .book-details-share-button {
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+
+  .book-details-share-button {
+    margin-bottom: 15%;
+  }
+
+  .book-details-disable {
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+}

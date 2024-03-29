@@ -1,0 +1,30 @@
+.promo p {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.promo-link {
+  color: rgb(8, 176, 35);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.promo-link:hover {
+  color: rgb(70, 248, 62);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .promo p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .promo p {
+    font-size: 1rem;
+  }
+}

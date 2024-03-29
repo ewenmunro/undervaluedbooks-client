@@ -1,0 +1,33 @@
+.addbook {
+  height: 100vh;
+}
+
+.addbook h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.addbook p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .addbook {
+    height: 120vh;
+  }
+
+  .addbook h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .addbook {
+    height: 120vh;
+  }
+
+  .addbook h1 {
+    font-size: 2rem;
+  }
+}
