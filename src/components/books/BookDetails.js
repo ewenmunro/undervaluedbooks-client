@@ -58,7 +58,7 @@ const BookDetails = () => {
 
   const readBook = (book) => {
     // Check if there's a valid link in the database for this book
-    if (book.read_book) {
+    if (book.read_book_link) {
       // Make a request to generate a temporary identifier for a logged-out user
       axios
         .get(`${apiBaseUrl}/api/read/generatetempid`)
@@ -67,7 +67,7 @@ const BookDetails = () => {
           const temporaryUserId = response.data.temporaryUserId;
 
           // Open the book link in a new tab
-          window.open(book.read_book, "_blank");
+          window.open(book.read_book_link, "_blank");
 
           // Make an API request to log the click
           axios.post(`${apiBaseUrl}/api/read/click`, {
@@ -138,7 +138,7 @@ const BookDetails = () => {
       <p>
         <b>*Read Book:</b>
       </p>
-      {book.read_book ? (
+      {book.read_book_link ? (
         <button
           className="book-details-read-button"
           onClick={() => readBook(book)}
