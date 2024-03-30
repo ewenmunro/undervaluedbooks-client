@@ -233,7 +233,7 @@ function AddBook({ onAddBook }) {
           <textarea
             id="description"
             name="description"
-            placeholder="Logline"
+            placeholder="About"
             value={formData.description}
             onChange={handleInputChange}
           />
