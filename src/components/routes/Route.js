@@ -17,6 +17,7 @@ import PrivacyPolicy from "../../pages/PrivacyPolicy";
 // components/auth
 import Logout from "../auth/Logout";
 import Verification from "../../pages/Verification";
+import AccountDeleted from "../../pages/AccountDeleted";
 
 // components/book
 import BookDetails from "../books/BookDetails";
@@ -47,6 +48,7 @@ const AllRoutes = () => (
     <Route path="/verification/:token" element={<Verification />} />
     <Route path="/signup" element={<Signup />} />
     <Route path="/logout" element={<Logout />} />
+    <Route path="/account-deleted" element={<AccountDeleted />} />
     <Route path="/terms-conditions" element={<TermsConditions />} />
     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
   </Routes>
